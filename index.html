@@ -1,14 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shazam style Eva</title>
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="sytel.css".css">
-</head>
-<body>
-    
-    
-</body>
+    <script>
+      document.querySelector(".s1 .listen").onclick = function() {
+        document.querySelector(".s2").style.zIndex = 150;
+      };
+    </script>
+  </head>
+  <body>
+    <header class="main_header">
+      <ul class="telephone">
+        <li><img src="img" alt="" />imagen</li>
+        <li><img src="img" alt="" />imagen</li>
+        <li><img src="img" alt="" />imagen</li>
+      </ul>
+    </header>
+    <section class="s1">
+      <ul class="promo">
+        <li><img class="imagen" src="" alt="" />artista 1</li>
+        <li><img class="imagen" src="" alt="" />artista 2</li>
+        <li><img class="imagen" src="" alt="" />artista 3</li>
+      </ul>
+      <h2>¿Qué canción suena?</h2>
+      <div class="cta">
+        <p>Sólo debes presionar el botón para saber que canción esta sonando</p>
+        <div class="listen-wrapper">
+          <img class="listen" src="" alt="boton" />
+        </div>
+      </div>
+    </section>
+
+    <section class="s2">
+      <div class="exploring-wrapper"></div>
+      <h1>Explorando</h1>
+      <div class="listen-wrapper">
+        <img class="listen" src="" alt="boton" />
+      </div>
+    </section>
+  </body>
 </html>
